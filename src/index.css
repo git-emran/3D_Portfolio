@@ -14,6 +14,15 @@ body {
   scroll-behavior: smooth;
   font-family: "Mona Sans", sans-serif;
 }
+.c-space {
+  @apply sm:px-10 px-5 lg:px-15;
+}
+.hover-animation {
+  @apply hover:-translate-y-1 duration-200;
+}
+.section-spacing {
+  @apply min-h-screen mt-20 md:mt-30;
+}
 
 section {
   width: 100dvw;
@@ -27,6 +36,7 @@ section {
   --color-black-200: #282732;
   --color-blue-50: #839cb5;
   --color-blue-100: #2d2d38;
+  --color-sand: #d6995c;
 }
 
 @layer utilities {
@@ -36,6 +46,7 @@ section {
   .flex-col-center {
     @apply flex flex-col justify-center items-center;
   }
+  
 }
 
 @layer components {
@@ -216,7 +227,7 @@ section {
     }
 
     .text {
-      @apply uppercase md:text-lg text-black-200 transition-all duration-500
+      @apply uppercase md:text-lg text-black transition-all duration-500
         group-hover:text-white-50 group-hover:-translate-x-5 xl:translate-x-0 -translate-x-5;
     }
 
@@ -305,7 +316,7 @@ section {
     }
 
     p {
-      @apply text-center md:text-start;
+      @apply text-center md:text-start cursor-pointer;
     }
 
     .socials {
