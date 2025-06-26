@@ -23,6 +23,9 @@ body {
 .section-spacing {
   @apply min-h-screen mt-20 md:mt-30;
 }
+.text-heading {
+  @apply font-bold text-3xl md:text-4xl;
+}
 
 section {
   width: 100dvw;
@@ -46,7 +49,6 @@ section {
   .flex-col-center {
     @apply flex flex-col justify-center items-center;
   }
-  
 }
 
 @layer components {
